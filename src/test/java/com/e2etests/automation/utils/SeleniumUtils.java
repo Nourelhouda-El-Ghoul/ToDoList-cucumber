@@ -7,9 +7,10 @@ import java.io.IOException;
 import java.io.Reader;
 import java.time.Duration;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Base64;
+import java.util.List;
 import java.util.Properties;
+
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 import org.json.simple.JSONArray;
@@ -95,6 +96,17 @@ public class SeleniumUtils extends BasePage {
 	 */
 	public void get(String url) {
 		driver.get(url);
+	}
+	
+	
+	
+	/**
+	 * method to get the current url.
+	 *
+	 * return current url
+	 */
+	public String getCurrentUrl() {
+		return driver.getCurrentUrl();
 	}
 
 	/**

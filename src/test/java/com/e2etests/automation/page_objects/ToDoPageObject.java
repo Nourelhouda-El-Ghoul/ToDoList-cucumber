@@ -1,4 +1,4 @@
-package com.e2etests.automation.page_object;
+package com.e2etests.automation.page_objects;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.e2etests.automation.utils.Setup;
 
 public class ToDoPageObject {
+
 	
 
 	/* @FindBy */

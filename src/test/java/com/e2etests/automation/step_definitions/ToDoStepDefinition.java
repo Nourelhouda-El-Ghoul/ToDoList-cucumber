@@ -1,5 +1,6 @@
 package com.e2etests.automation.step_definitions;
-import com.e2etests.automation.page_object.ToDoPageObject;
+
+import com.e2etests.automation.page_objects.ToDoPageObject;
 import com.e2etests.automation.utils.ConfigFileReader;
 import com.e2etests.automation.utils.SeleniumUtils;
 import com.e2etests.automation.utils.Validations;
@@ -9,7 +10,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class ToDoStepDefinition {
-
 	private ToDoPageObject toDoPageObject;
 	private SeleniumUtils seleniumUtils;
 	private Validations validations;
@@ -65,10 +65,6 @@ public class ToDoStepDefinition {
 		validations.assertEquals(toDoPageObject.messgae, text);
 
 	}
-
-
-
-
 
 
 

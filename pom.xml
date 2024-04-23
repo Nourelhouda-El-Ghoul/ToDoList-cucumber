@@ -2,21 +2,19 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-	<groupId>TodoListCucumber-Selenium</groupId>
-	<artifactId>TodoListCucumber-Selenium</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+  <groupId>AutomationQA</groupId>
+  <artifactId>AutomationQA</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
-	<name>AutomationQA</name>
-	<url>http://maven.apache.org</url>
-
-
-<properties>
+  <name>AutomationQA</name>
+  <url>http://maven.apache.org</url>
+ <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        
-        <selenium.version>4.16.1</selenium.version> 
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+       
+        <selenium.version>4.16.1</selenium.version>
         <log4jcore.version>2.17.2</log4jcore.version>
         <log4japi.version>2.17.2</log4japi.version>
         <cucumberjava.version>7.15.0</cucumberjava.version>
@@ -32,26 +30,22 @@
         <json.version>1.1.1</json.version>
         <junitplatform.version>1.8.1</junitplatform.version>
         <junit.version>5.8.2</junit.version>
-    
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <argLine>-Dfile.encoding=UTF-8</argLine>
-
+       
     </properties>
-    
+   
     <dependencies>
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>${apachepoi.version}</version>
-        </dependency>   
+        </dependency>  
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-    
+   
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -137,5 +131,5 @@
         </dependency>
   </dependencies>
 
-
+  
 </project>

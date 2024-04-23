@@ -56,24 +56,10 @@ public class Validations extends BasePage {
 		Assert.assertEquals(text1, text);
 
 	}
-	
-	/**
-	 * method verify element is not equal.
-	 */
-	public void assertNotEquals(String text, String text1) {
-		Assert.assertNotEquals(text1, text);
-
-	}
 
 	public void assertTrue(WebElement element, String text) {
 		String text1 = element.getText();
 		Assert.assertTrue(text1.contains(text));
-
-	}
-	
-	public void assertTrueBoolean(WebElement element) {
-		boolean text1 = element.isDisplayed();
-		Assert.assertTrue(text1);
 
 	}
 
@@ -87,6 +73,11 @@ public class Validations extends BasePage {
 		return Setup.getDriver().findElements(targetElement).size() > 0;
 	}
 
+	public void assertTrueBoolean(WebElement element) {
+		boolean text1 = element.isDisplayed();
+		Assert.assertTrue(text1);
+
+	}
 	/**
 	 * methode Checks if is element displayed.
 	 *
